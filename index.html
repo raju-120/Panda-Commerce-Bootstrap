@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar fixed-top navbar-expand-lg bg-light">
             <div class="container">
               <a class="navbar-brand" href="#">
                 <img class="img-fluid" src="images/logo.png" alt="">
@@ -24,13 +24,13 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Shoes</a>
+                    <a class="nav-link" href="#shoes">Shoes</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Backpacks</a>
+                    <a class="nav-link" href="#bagpacks">Backpacks</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link">Subscribe</a>
+                    <a class="nav-link" href="#subscribe">Subscribe</a>
                   </li>
                 </ul>
               </div>
@@ -123,7 +123,7 @@
         </section>
         <!-------Catagories End------->
         <!-------Shoes Section Start------->
-        <section class="container my-5">
+        <section class="container my-5" id="shoes">
             <h2 class="mb-4">Shoes</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
@@ -168,8 +168,8 @@
               </div>
         </section>
         <!-------Shoes Section End------->
-        <!-------Bags Section Start------>
-        <section class="container my-5">
+        <!-------Bagpack Start------>
+        <section class="container my-5" id="bagpacks">
           <h2 class="mb-4">Bags</h2>
           <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
               <div class="col">
@@ -213,8 +213,25 @@
               </div>
             </div>
       </section>
-        <!-------Bags Section End------>
+        <!-------Bagpack End------>
+        <!-------Subscribe Start------>
+        <section style="height: 350px;" class="container rounded-3 d-flex bg-info justify-content-center align-items-center" id="subscribe">
+          <div>
+            <h2>Let's Stay in Touch</h2>
+            <p>Get updates on sales specials and more</p>
+            <form>
+                <div class="mb-1">
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                <button type="submit" class="btn btn-warning">Submit</button>
+            </form>
+          </div>
+        </section>
+        <!-------Subscribe  End------>
     </main>
+    <footer class="mt-5 text-center">
+      <p><small> &copy;2022.Panda commerce.All right reserved to Raju.  </small></p>
+    </footer>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
